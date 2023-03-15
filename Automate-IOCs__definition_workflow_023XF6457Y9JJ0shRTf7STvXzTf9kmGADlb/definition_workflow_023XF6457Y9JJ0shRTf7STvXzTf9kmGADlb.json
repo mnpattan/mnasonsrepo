@@ -1,0 +1,1621 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb",
+    "name": "Automate-IOCs",
+    "title": "Automate-IOCs",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "SecureX_ IoC_Email_Update_Workflow",
+          "scope": "static",
+          "name": "Judgment Source",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M24PI0bbCb0iZSXYyHXAknOO889",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "High",
+          "scope": "static",
+          "name": "Judgement Confidence",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M18DT3tb2yuy7C6NoFjIy87q014",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "indicator-d465c8df-1e20-4dd0-8daf-845d07f60211",
+          "scope": "input",
+          "name": "SecureX_Domain_Indicator_ID",
+          "type": "datatype.string",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M3I1G72EYsDtUhdh6XhKZ8XIk8d",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "mnpattan@cisco.com",
+          "scope": "input",
+          "name": "Email Recipient",
+          "type": "datatype.string",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M1WGR2HOY1YLTAxZOR6tOjYXfw4",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "indicator-46c88dcd-c538-44bb-bd17-512b5753c1cd",
+          "scope": "input",
+          "name": "SecureX_TCS_IPv6_Indicator_ID",
+          "type": "datatype.string",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M2S6H0xbsOYHXFDURYueLrIlxj8",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "SecureX_ IoC_Email_Update_Workflow",
+          "scope": "static",
+          "name": "Judgement Reason",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "indicator-d465c8df-1e20-4dd0-8daf-845d07f60211",
+          "scope": "input",
+          "name": "SecureX_TCS_IPv4_Indicator_ID",
+          "type": "datatype.string",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M4Q8G4ZkC7YQrqTLpGjxgOEfTHJ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "[\n\t{\n\t\t\"asa\": \"10.105.130.204\",\n\t\t\"contexts\": []\n\t},\n\t{\n\t\t\"asa\": \"10.105.130.204\"\n\t},\n\t{\n\t\t\"asa\": \"10.105.130.204\",\n\t\t\"contexts\": [\n\t\t\t\"admin\",\n\t\t\t\"context1\",\n\t\t\t\"context2\"\n\t\t]\n\t}\n]",
+          "scope": "input",
+          "name": "ASA_LIST",
+          "type": "datatype.string",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M0VL11pN3HxR5LynJDlGdslDXTF",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "indicator-dcae283b-edb0-49cd-acda-3f2f30d2c458",
+          "scope": "input",
+          "name": "SecureX_TCS_URL_Indicator_ID",
+          "type": "datatype.string",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M39J34u0YT4t9gqNU3xD0gGrOca",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 90,
+          "scope": "static",
+          "name": "Judgement Priority",
+          "type": "datatype.integer",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M1OEI2iQncta77WiERXJe2Rdk51",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "TCS_IoC_Blocking",
+          "scope": "input",
+          "name": "ASA Network Group Name",
+          "type": "datatype.string",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M31CN6pEwmW4hX1c6dh6OOjR6NU",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Current ASA",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M1GMA16iaCJv7WZ7kPNaNg532ev",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "red",
+          "scope": "static",
+          "name": "Judgement TLP",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M3RXL5vNvhvevVAX6Mh40xSz9dp",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Current Context",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M49SX578AfqCP39shrefKovlPWl",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Malicious",
+          "scope": "static",
+          "name": "Judgment Disposition",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M2KX71BM20sGcvEvq4LuCBa7bsd",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "indicator-e00db678-bb40-44d2-88b7-1e64befa1259",
+          "scope": "input",
+          "name": "SecureX_TCS_SHA256_Indicator_ID",
+          "type": "datatype.string",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M400Y0HPyYW7uhCf3BTfh8i1OvQ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "High",
+          "scope": "static",
+          "name": "Judgement Severity",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_023XF645M2DF01IjOlD9bkQOzGbSzE4KKZS",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "display_name": "Automate-IOCs",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "execute_on_target_group": true,
+        "target_group": {
+          "target_group_id": "target_group_021QSY51X3WZ304W5LuGD2177cyI5hOxe24",
+          "run_on_all_targets": true,
+          "selected_target_types": [
+            "web-service.endpoint"
+          ]
+        }
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb",
+        "name": "Execute Python Script",
+        "title": "Get Email IOCs",
+        "type": "python3.script",
+        "base_type": "activity",
+        "properties": {
+          "action_timeout": 180,
+          "continue_on_failure": false,
+          "display_name": "Get Email IOCs",
+          "script": "#!python3\n\nfrom ipaddress import ip_network\nimport json\nimport re\n\nfrom pprint import pprint\n\n\ndef get_ioc(ioc):\n    if ioc:\n        return {\"ioc\": ioc}\n\n\ndef is_ip_ioc(ioc):\n    is_valid_ip = False\n    version = 0\n    is_host = False\n    ioc_sanitized = \"\"\n    try:\n        network = ip_network(ioc)\n    except ValueError as error:\n        # print(f\"{error = }\")\n        pass\n    else:\n        is_valid_ip = True\n        version = ip_network(ioc).version\n        if network.num_addresses == 1:\n            is_host = True\n            ioc_sanitized = str(network.network_address)\n        else:\n            is_host = False\n            ioc_sanitized = str(network)\n    finally:\n        return is_valid_ip, version, is_host, get_ioc(ioc_sanitized)\n\n\ndef is_sha256_ioc(ioc):\n    is_valid_sha256 = re.fullmatch(r\"^[a-fA-F0-9]{64}$\", ioc)\n    return is_valid_sha256, get_ioc(ioc)\n\n\ndef is_url_ioc(ioc):\n    url_pattern = \"URL:\"\n    is_valid_url = ioc.startswith(url_pattern)\n    ioc_sanitized = ioc.lstrip(url_pattern)\n    return is_valid_url, get_ioc(ioc_sanitized)\n\n\ndef is_domain_ioc(ioc):\n    domain_pattern = \"DOMAIN:\"\n    ioc_sanitized = \"\"\n    is_valid_domain_pattern = ioc.startswith(domain_pattern)\n    if is_valid_domain_pattern:\n        ioc_sanitized = ioc.lstrip(domain_pattern)\n    is_valid_domain_rgx = re.fullmatch(r\"(?=^.{4,253}\\.?$)(^((?!-)[a-zA-Z0-9-]{1,63}(?\u003c!-)\\.)+[a-zA-Z]{2,63}\\.?$)\", ioc)\n    if not is_valid_domain_pattern and is_valid_domain_rgx:\n        ioc_sanitized = ioc\n    is_valid_domain = is_valid_domain_pattern or is_valid_domain_rgx\n    return is_valid_domain, get_ioc(ioc_sanitized)\n\n\ndef get_iocs_from_list(email_lines):\n    # _email_iocs = [ioc for ioc in email_lines if ioc and ioc.strip(\"\")]\n    email_iocs_set = set(ioc for ioc in email_lines if ioc and ioc.strip(\"\"))\n    print(f\"\\nemail iocs set\".upper())\n    pprint(email_iocs_set)\n    ipv4_host_iocs = []\n    ipv4_network_iocs = []\n    ipv6_host_iocs = []\n    ipv6_network_iocs = []\n    sha256_iocs = []\n    url_iocs = []\n    domain_iocs = []\n    uncategorised_iocs = []\n    for email_ioc in email_iocs_set:\n        is_valid_ip, version, is_host, ip_ioc = is_ip_ioc(email_ioc)\n        if is_valid_ip and version == 4 and is_host and ip_ioc not in ipv4_host_iocs:\n            ipv4_host_iocs.append(ip_ioc)\n        elif is_valid_ip and version == 4 and not is_host and ip_ioc not in ipv4_network_iocs:\n            ipv4_network_iocs.append(ip_ioc)\n        elif is_valid_ip and version == 6 and is_host and ip_ioc not in ipv6_host_iocs:\n            ipv6_host_iocs.append(ip_ioc)\n        elif is_valid_ip and version == 6 and not is_host and ip_ioc not in ipv6_network_iocs:\n            ipv6_network_iocs.append(ip_ioc)\n        else:\n            is_valid_sha256, sha256_ioc = is_sha256_ioc(email_ioc)\n            is_valid_url, url_ioc = is_url_ioc(email_ioc)\n            is_valid_domain, domain_ioc = is_domain_ioc(email_ioc)\n            if is_valid_sha256 and sha256_ioc not in sha256_iocs:\n                sha256_iocs.append(sha256_ioc)\n            elif is_valid_url and url_ioc not in url_iocs:\n                url_iocs.append(url_ioc)\n            elif is_valid_domain and domain_ioc not in domain_iocs:\n                domain_iocs.append(domain_ioc)\n            else:\n                # if get_ioc(email_ioc) not in domain_iocs:\n                #     domain_iocs.append(get_ioc(email_ioc))\n                # if get_ioc(email_ioc) not in url_iocs:\n                #     url_iocs.append(get_ioc(email_ioc))\n                if get_ioc(email_ioc) not in uncategorised_iocs:\n                    uncategorised_iocs.append(get_ioc(email_ioc))\n    iocs = {\n        \"ipv4_host_iocs\": ipv4_host_iocs,\n        \"ipv4_network_iocs\": ipv4_network_iocs,\n        \"ipv6_host_iocs\": ipv6_host_iocs,\n        \"ipv6_network_iocs\": ipv6_network_iocs,\n        \"sha256_iocs\": sha256_iocs,\n        \"url_iocs\": url_iocs,\n        \"domain_iocs\": domain_iocs,\n        \"uncategorised_iocs\": uncategorised_iocs,\n    }\n    print(\"\\niocs\".upper())\n    pprint(iocs)\n    return iocs\n\n\ndef get_valid_ioc_lines(message):\n    start = -1\n    end = 0\n    lines = message.splitlines()\n    for index, line in enumerate(lines):\n        if line == \"IOC START\":\n            start = index + 1\n            break\n    for index, line in enumerate(lines):\n        if index \u003e start and line == \"IOC END\":\n            end = index - 1\n            break\n    valid_lines = lines[start:end]\n    print(f\"\\nvalid lines\".upper())\n    pprint(valid_lines)\n    return valid_lines\n\n\n# ioc_email_body = \"\"\"Todays IOC LIST\n\n# Veniam excepteur sit laboris eiusmod eiusmod excepteur. Excepteur ut anim ullamco laborum consectetur nulla sunt laborum consequat esse cupidatat culpa id. Quis nulla magna nulla ea sunt incididunt aliqua nulla ipsum. Velit ea qui eu non ipsum consectetur. Reprehenderit in est culpa eiusmod quis fugiat voluptate est.\n\n\n# IOC START\n# dc6c:48fe:bbce:1752:c782:ec5a:ddd8:108f\n# 2001:DB8::0DB8:800:200C:417A\n\n# 2001:DB8:0:CD30::/60\n\n# e7c21ec7cc7467bb450f456322d360e1bbb5c1c4a508bd9f926c3629733a4b1a\n# 2.2.2.2\n# example.org\n# 1.1.1.1\n\n\n# 2.2.2.2/32\n# scanme.org\n# 1.1.1.0/24\n# 1.1.1.1/32\n\n\n# 9b4bf41c4ac7447355218b18ec739c834bdfd7c80b6d7dd6973558b416ea7b9d\n\n\n# 6f41:9211:8930:24b9:1eeb:3dea:a3e0:4121\n# f0cea78678a2d147cbaa510cf72e11d7009d6ca569135ccd6977f33870380a1d\n# URL:http://internetbadgys.com/to/path\n# URL:http://scanme.org//to/path/regex/?bad=true*\n# DOMAIN:scanme.org\n\n# IOC END\n# Minim eiusmod quis qui adipisicing excepteur. Ad irure amet culpa tempor officia cillum. Tempor deserunt excepteur cupidatat consequat consequat labore laborum eu deserunt dolor excepteur ea laboris. Amet reprehenderit mollit velit magna consectetur in non ex enim nostrud. Deserunt qui laboris dolor qui. Cupidatat voluptate ipsum anim nisi labore sunt cillum cupidatat id officia.\n\n\n# ---------------------------------------------------------\n# Thanks \u0026 Regards\n# Manish Gaurav\n# Security Consulting Engineer\n# CX Security APJC Professional Services\n# Standard Business Hours: 10 am – 7 pm IST\n# Email: magaurav@cisco.com\n\n\n# \"\"\"\n\nvalid_ioc_lines = get_valid_ioc_lines(\"\"\"$trigger.triggerevent_023XFEFWT1UF44Eig9FtoeX6p103NfEgnT9.output.message$\"\"\")\niocs = get_iocs_from_list(valid_ioc_lines)\n\nipv4_host_iocs = json.dumps(iocs[\"ipv4_host_iocs\"])\nipv4_network_iocs = json.dumps(iocs[\"ipv4_network_iocs\"])\nipv6_host_iocs = json.dumps(iocs[\"ipv6_host_iocs\"])\nipv6_network_iocs = json.dumps(iocs[\"ipv6_network_iocs\"])\nsha256_iocs = json.dumps(iocs[\"sha256_iocs\"])\nurl_iocs = json.dumps(iocs[\"url_iocs\"])\ndomain_iocs = json.dumps(iocs[\"domain_iocs\"])\nuncategorised_iocs = json.dumps(iocs[\"uncategorised_iocs\"])",
+          "script_queries": [
+            {
+              "script_query": "ipv4_host_iocs",
+              "script_query_name": "ipv4_host_iocs",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "ipv4_network_iocs",
+              "script_query_name": "ipv4_network_iocs",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "ipv6_host_iocs",
+              "script_query_name": "ipv6_host_iocs",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "ipv6_network_iocs",
+              "script_query_name": "ipv6_network_iocs",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "sha256_iocs",
+              "script_query_name": "sha256_iocs",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "url_iocs",
+              "script_query_name": "url_iocs",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "domain_iocs",
+              "script_query_name": "domain_iocs",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "uncategorised_iocs",
+              "script_query_name": "uncategorised_iocs",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "iocs",
+              "script_query_name": "iocs",
+              "script_query_type": "string"
+            }
+          ],
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_023XF64FKEAUO0d9HAsuEvOxqD9A1ovNAW1",
+        "name": "Parallel Block",
+        "title": "Update FMC and ASA",
+        "type": "logic.parallel",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Update FMC and ASA",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_023XF64GNBTPP17eMNkO6mnwCGAakq1TpnC",
+            "name": "Parallel Branch",
+            "title": "Update Threat Intelligence Feed for FMC",
+            "type": "logic.parallel_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "1. Create Private Judgment\n2. Link to Private Indicator =\u003e Update Feed",
+              "display_name": "Update Threat Intelligence Feed for FMC",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO",
+                "name": "Threat Response - Generate Access Token",
+                "title": "Threat Response - Generate Access Token",
+                "type": "workflow.atomic_workflow",
+                "base_type": "subworkflow",
+                "properties": {
+                  "continue_on_failure": true,
+                  "display_name": "Threat Response - Generate Access Token",
+                  "runtime_user": {
+                    "target_default": true
+                  },
+                  "skip_execution": false,
+                  "target": {
+                    "override_workflow_target": true,
+                    "target_id": "definition_target_023Y9H7JK10FY3uiI3R6o01sj2FYJUNerId",
+                    "target_type": "web-service.endpoint"
+                  },
+                  "workflow_id": "definition_workflow_01PP75S3LTBW4420OZU3rdHWKHFnE6aC7yH",
+                  "workflow_name": "Threat Response - Generate Access Token"
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_023XF64KCA4FV4YfBpsP42LhSsezbB9PKmS",
+                "name": "Parallel Block",
+                "title": "Create Judgement and Link to Indicator",
+                "type": "logic.parallel",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Create Judgement and Link to Indicator",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_023XF64L4NXXV6TfIKUaFhmhaKEmdkZFd5p",
+                    "name": "Parallel Branch",
+                    "title": "IPv4 Host IOCs",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "IPv4 Host IOCs",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_023XF64MR0ANF4RO0bVLXCpW0ZSZwAufHYK",
+                        "name": "Read Table from JSON",
+                        "title": "Get IPv4 Host IOCs",
+                        "type": "corejava.read_table_from_json",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Get IPv4 Host IOCs",
+                          "input_json": "$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.ipv4_host_iocs$",
+                          "jsonpath_query": "$.",
+                          "persist_output": true,
+                          "populate_columns": false,
+                          "skip_execution": false,
+                          "table_columns": [
+                            {
+                              "column_name": "ioc",
+                              "column_type": "string"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_023XF64OPUHK96Zq4PkTik22FREMMQE8ULv",
+                        "name": "For Each",
+                        "title": "For Each IOC",
+                        "type": "logic.for_each",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "For Each IOC",
+                          "skip_execution": false,
+                          "source_array": "$activity.definition_activity_023XF64MR0ANF4RO0bVLXCpW0ZSZwAufHYK.output.read_table_from_json$"
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_023XF64R9YPB25bAHfoJRkrxe9D0b0XJpHD",
+                            "name": "Threat Response - Create Private Judgement",
+                            "title": "Threat Response - Create Private Judgement",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response - Create Private Judgement",
+                              "input": {
+                                "variable_workflow_02041UD61IL042DNGODUf0xAIuixH3Rc01z": "{\n\"source\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M24PI0bbCb0iZSXYyHXAknOO889$\",\n\"reason\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$\",\n\"priority\": $workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M1OEI2iQncta77WiERXJe2Rdk51$,\n\"disposition_name\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2KX71BM20sGcvEvq4LuCBa7bsd$\",\n\"severity\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2DF01IjOlD9bkQOzGbSzE4KKZS$\",\n\"confidence\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M18DT3tb2yuy7C6NoFjIy87q014$\",\n\"tlp\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M3RXL5vNvhvevVAX6Mh40xSz9dp$\",\n\"observable\": {\"value\": \"$activity.definition_activity_023XF64OPUHK96Zq4PkTik22FREMMQE8ULv.input.source_array[@].ioc$\", \"type\": \"ip\"}\n}",
+                                "variable_workflow_02042N7MDVSC609MvIcMEmPfpwfNmwOJ7Nv": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_02041WD96QRVD7Iv5c6jk3Bwz4sFFjxkBB7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_02041RUTMEWJN5i9HAHU7sOob46GkYwANLN",
+                              "workflow_name": "Threat Response - Create Private Judgement"
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF64TPNW5R2u7rDr19rdNxqYeqIKUWBM",
+                            "name": "JSONPath Query",
+                            "title": "Judgemet ID",
+                            "type": "corejava.jsonpathquery",
+                            "base_type": "activity",
+                            "properties": {
+                              "action_timeout": 180,
+                              "continue_on_failure": false,
+                              "display_name": "Judgemet ID",
+                              "input_json": "$activity.definition_activity_023XF64R9YPB25bAHfoJRkrxe9D0b0XJpHD.output.variable_workflow_0204AA8D7GVKE3XiwJDjGek8PKLXII7Id8B$",
+                              "jsonpath_queries": [
+                                {
+                                  "jsonpath_query": "id",
+                                  "jsonpath_query_name": "Judgement ID",
+                                  "jsonpath_query_type": "string",
+                                  "zdate_type_format": "yyyy-MM-dd'T'HH:mm:ssZ"
+                                }
+                              ],
+                              "skip_execution": false
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF64VQPL173XPOWGxpjti87e68kP0WS5",
+                            "name": "Threat Response -  Relate Judgement to Indicator",
+                            "title": "Threat Response -  Relate Judgement to Indicator",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response -  Relate Judgement to Indicator",
+                              "input": {
+                                "variable_workflow_0204AJ7FYKDNP52ZwHEV8KjV7Tp479yBuTR": "$activity.definition_activity_023XF64TPNW5R2u7rDr19rdNxqYeqIKUWBM.output.jsonpath_queries.Judgement ID$",
+                                "variable_workflow_0204AJF1EU15B6oCJRWQdMvi7pjrLFsdjx7": "https://private.intel.amp.cisco.com:443/ctia/indicator/$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.input.variable_workflow_023XF645M4Q8G4ZkC7YQrqTLpGjxgOEfTHJ$",
+                                "variable_workflow_0204AKR60C4JM6mVqRssGWv5g4vUbuySX08": "$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$",
+                                "variable_workflow_0204BSSSXIKTY0TFQJoxXzCQyyfABQLR9t1": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_0204AHSKUWSV774MnRx1Id4i7LsA1UGkbJ7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_0204AFQGHD1JR48ie24qXD5qYiIMPpnzn4H",
+                              "workflow_name": "Threat Response -  Relate Judgement to Indicator"
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_023XF64XLPC3M6MFuGacGG8cHyWjYKYtXk0",
+                    "name": "Parallel Branch",
+                    "title": "Domain IOCs",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "Domain IOCs",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_023XF64YRR74G5gQcHdWKyGovOVrJ4OCQ1w",
+                        "name": "Read Table from JSON",
+                        "title": "Get Domain IOCs",
+                        "type": "corejava.read_table_from_json",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Get Domain IOCs",
+                          "input_json": "$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.domain_iocs$",
+                          "jsonpath_query": "$.",
+                          "persist_output": true,
+                          "populate_columns": false,
+                          "skip_execution": false,
+                          "table_columns": [
+                            {
+                              "column_name": "ioc",
+                              "column_type": "string"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_023XF650AZAML7P0Dguz12lpxN8BU5Fr1NU",
+                        "name": "For Each",
+                        "title": "For Each IOC",
+                        "type": "logic.for_each",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "For Each IOC",
+                          "skip_execution": false,
+                          "source_array": "$activity.definition_activity_023XF64YRR74G5gQcHdWKyGovOVrJ4OCQ1w.output.read_table_from_json$"
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_023XF652PVYHY4OEgMTHienD0hezC9g7XH1",
+                            "name": "Threat Response - Create Private Judgement",
+                            "title": "Threat Response - Create Private Judgement",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response - Create Private Judgement",
+                              "input": {
+                                "variable_workflow_02041UD61IL042DNGODUf0xAIuixH3Rc01z": "{\n\"source\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M24PI0bbCb0iZSXYyHXAknOO889$\",\n\"reason\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$\",\n\"priority\": $workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M1OEI2iQncta77WiERXJe2Rdk51$,\n\"disposition_name\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2KX71BM20sGcvEvq4LuCBa7bsd$\",\n\"severity\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2DF01IjOlD9bkQOzGbSzE4KKZS$\",\n\"confidence\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M18DT3tb2yuy7C6NoFjIy87q014$\",\n\"tlp\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M3RXL5vNvhvevVAX6Mh40xSz9dp$\",\n\"observable\": {\"value\": \"$activity.definition_activity_023XF650AZAML7P0Dguz12lpxN8BU5Fr1NU.input.source_array[@].ioc$\", \"type\": \"domain\"}\n}",
+                                "variable_workflow_02042N7MDVSC609MvIcMEmPfpwfNmwOJ7Nv": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_02041WD96QRVD7Iv5c6jk3Bwz4sFFjxkBB7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_02041RUTMEWJN5i9HAHU7sOob46GkYwANLN",
+                              "workflow_name": "Threat Response - Create Private Judgement"
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF654J7XI42gyoes7LHs4N1jS6my8dYr",
+                            "name": "JSONPath Query",
+                            "title": "Judgemet ID",
+                            "type": "corejava.jsonpathquery",
+                            "base_type": "activity",
+                            "properties": {
+                              "action_timeout": 180,
+                              "continue_on_failure": false,
+                              "display_name": "Judgemet ID",
+                              "input_json": "$activity.definition_activity_023XF652PVYHY4OEgMTHienD0hezC9g7XH1.output.variable_workflow_0204AA8D7GVKE3XiwJDjGek8PKLXII7Id8B$",
+                              "jsonpath_queries": [
+                                {
+                                  "jsonpath_query": "id",
+                                  "jsonpath_query_name": "Judgement ID",
+                                  "jsonpath_query_type": "string"
+                                }
+                              ],
+                              "skip_execution": false
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF656CYHGK1Ue5ee6WvghqFKpR9A6q1d",
+                            "name": "Threat Response -  Relate Judgement to Indicator",
+                            "title": "Threat Response -  Relate Judgement to Indicator",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response -  Relate Judgement to Indicator",
+                              "input": {
+                                "variable_workflow_0204AJ7FYKDNP52ZwHEV8KjV7Tp479yBuTR": "$activity.definition_activity_023XF654J7XI42gyoes7LHs4N1jS6my8dYr.output.jsonpath_queries.Judgement ID$",
+                                "variable_workflow_0204AJF1EU15B6oCJRWQdMvi7pjrLFsdjx7": "https://private.intel.amp.cisco.com:443/ctia/indicator/$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.input.variable_workflow_023XF645M3I1G72EYsDtUhdh6XhKZ8XIk8d$",
+                                "variable_workflow_0204AKR60C4JM6mVqRssGWv5g4vUbuySX08": "$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$",
+                                "variable_workflow_0204BSSSXIKTY0TFQJoxXzCQyyfABQLR9t1": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_0204AHSKUWSV774MnRx1Id4i7LsA1UGkbJ7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_0204AFQGHD1JR48ie24qXD5qYiIMPpnzn4H",
+                              "workflow_name": "Threat Response -  Relate Judgement to Indicator"
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_023XF65846B9J7IRRMeGkTh5sBBvXgkqSh6",
+                    "name": "Parallel Branch",
+                    "title": "SHA256 IOCs",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "SHA256 IOCs",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_023XF65970MK9510eCaes7mMlobFRed0G2S",
+                        "name": "Read Table from JSON",
+                        "title": "Get SHA256 IOCs",
+                        "type": "corejava.read_table_from_json",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Get SHA256 IOCs",
+                          "input_json": "$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.sha256_iocs$",
+                          "jsonpath_query": "$.",
+                          "persist_output": true,
+                          "populate_columns": false,
+                          "skip_execution": false,
+                          "table_columns": [
+                            {
+                              "column_name": "ioc",
+                              "column_type": "string"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_023XF65AOSX5A1UDEOFbkIMXTMPelsQs4gx",
+                        "name": "For Each",
+                        "title": "For Each IOC",
+                        "type": "logic.for_each",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "For Each IOC",
+                          "skip_execution": false,
+                          "source_array": "$activity.definition_activity_023XF65970MK9510eCaes7mMlobFRed0G2S.output.read_table_from_json$"
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_023XF65D4RSRA3aS3PFrVcW24DJch9uuCCP",
+                            "name": "Threat Response - Create Private Judgement",
+                            "title": "Threat Response - Create Private Judgement",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response - Create Private Judgement",
+                              "input": {
+                                "variable_workflow_02041UD61IL042DNGODUf0xAIuixH3Rc01z": "{\n\"source\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M24PI0bbCb0iZSXYyHXAknOO889$\",\n\"reason\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$\",\n\"priority\": $workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M1OEI2iQncta77WiERXJe2Rdk51$,\n\"disposition_name\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2KX71BM20sGcvEvq4LuCBa7bsd$\",\n\"severity\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2DF01IjOlD9bkQOzGbSzE4KKZS$\",\n\"confidence\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M18DT3tb2yuy7C6NoFjIy87q014$\",\n\"tlp\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M3RXL5vNvhvevVAX6Mh40xSz9dp$\",\n\"observable\": {\"value\": \"$activity.definition_activity_023XF65AOSX5A1UDEOFbkIMXTMPelsQs4gx.input.source_array[@].ioc$\", \"type\": \"sha256\"}\n}",
+                                "variable_workflow_02042N7MDVSC609MvIcMEmPfpwfNmwOJ7Nv": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_01R7P5QZ072GX7HQLXeHyF82t6rVOnXp8Vw",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_02041RUTMEWJN5i9HAHU7sOob46GkYwANLN",
+                              "workflow_name": "Threat Response - Create Private Judgement"
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF65EXT5O226XSgGnjoK5N9ZOgB5sfzz",
+                            "name": "JSONPath Query",
+                            "title": "Judgemet ID",
+                            "type": "corejava.jsonpathquery",
+                            "base_type": "activity",
+                            "properties": {
+                              "action_timeout": 180,
+                              "continue_on_failure": false,
+                              "display_name": "Judgemet ID",
+                              "input_json": "$activity.definition_activity_023XF65D4RSRA3aS3PFrVcW24DJch9uuCCP.output.variable_workflow_0204AA8D7GVKE3XiwJDjGek8PKLXII7Id8B$",
+                              "jsonpath_queries": [
+                                {
+                                  "jsonpath_query": "id",
+                                  "jsonpath_query_name": "Judgement ID",
+                                  "jsonpath_query_type": "string"
+                                }
+                              ],
+                              "skip_execution": false
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF65GTTBAI2d9VJo9BjSzHoCtfuLBpnP",
+                            "name": "Threat Response -  Relate Judgement to Indicator",
+                            "title": "Threat Response -  Relate Judgement to Indicator",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response -  Relate Judgement to Indicator",
+                              "input": {
+                                "variable_workflow_0204AJ7FYKDNP52ZwHEV8KjV7Tp479yBuTR": "$activity.definition_activity_023XF65EXT5O226XSgGnjoK5N9ZOgB5sfzz.output.jsonpath_queries.Judgement ID$",
+                                "variable_workflow_0204AJF1EU15B6oCJRWQdMvi7pjrLFsdjx7": "https://private.intel.amp.cisco.com:443/ctia/indicator/$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.input.variable_workflow_023XF645M400Y0HPyYW7uhCf3BTfh8i1OvQ$",
+                                "variable_workflow_0204AKR60C4JM6mVqRssGWv5g4vUbuySX08": "$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$",
+                                "variable_workflow_0204BSSSXIKTY0TFQJoxXzCQyyfABQLR9t1": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_01R7P5QZ072GX7HQLXeHyF82t6rVOnXp8Vw",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_0204AFQGHD1JR48ie24qXD5qYiIMPpnzn4H",
+                              "workflow_name": "Threat Response -  Relate Judgement to Indicator"
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_023XF65IP3D2B77ORxdzVkUprC8xY0ZIwWK",
+                    "name": "Parallel Branch",
+                    "title": "IPv4 Network IOCs",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "IPv4 Network IOCs",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_023XF65JSTB1Q6Rqx4kyz3azOJQwztidplh",
+                        "name": "Read Table from JSON",
+                        "title": "Get IPv4 Network IOCs",
+                        "type": "corejava.read_table_from_json",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Get IPv4 Network IOCs",
+                          "input_json": "$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.ipv4_network_iocs$",
+                          "jsonpath_query": "$.",
+                          "persist_output": true,
+                          "populate_columns": false,
+                          "skip_execution": false,
+                          "table_columns": [
+                            {
+                              "column_name": "ioc",
+                              "column_type": "string"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_023XF65LBTFZ83dKmCWSfo85nvrvNjugQoX",
+                        "name": "For Each",
+                        "title": "For Each IOC",
+                        "type": "logic.for_each",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "For Each IOC",
+                          "skip_execution": false,
+                          "source_array": "$activity.definition_activity_023XF65JSTB1Q6Rqx4kyz3azOJQwztidplh.output.read_table_from_json$"
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_023XF65NT8HIN1PUvTPbWkR9MKg69ldWXot",
+                            "name": "Threat Response - Create Private Judgement",
+                            "title": "Threat Response - Create Private Judgement",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response - Create Private Judgement",
+                              "input": {
+                                "variable_workflow_02041UD61IL042DNGODUf0xAIuixH3Rc01z": "{\n\"source\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M24PI0bbCb0iZSXYyHXAknOO889$\",\n\"reason\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$\",\n\"priority\": $workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M1OEI2iQncta77WiERXJe2Rdk51$,\n\"disposition_name\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2KX71BM20sGcvEvq4LuCBa7bsd$\",\n\"severity\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2DF01IjOlD9bkQOzGbSzE4KKZS$\",\n\"confidence\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M18DT3tb2yuy7C6NoFjIy87q014$\",\n\"tlp\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M3RXL5vNvhvevVAX6Mh40xSz9dp$\",\n\"observable\": {\"value\": \"$activity.definition_activity_023XF65LBTFZ83dKmCWSfo85nvrvNjugQoX.input.source_array[@].ioc$\", \"type\": \"ip\"}\n}",
+                                "variable_workflow_02042N7MDVSC609MvIcMEmPfpwfNmwOJ7Nv": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_02041WD96QRVD7Iv5c6jk3Bwz4sFFjxkBB7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_02041RUTMEWJN5i9HAHU7sOob46GkYwANLN",
+                              "workflow_name": "Threat Response - Create Private Judgement"
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF65PMXEFD0Geu3TDEETfhh6ADOgUJEE",
+                            "name": "JSONPath Query",
+                            "title": "Judgemet ID",
+                            "type": "corejava.jsonpathquery",
+                            "base_type": "activity",
+                            "properties": {
+                              "action_timeout": 180,
+                              "continue_on_failure": false,
+                              "display_name": "Judgemet ID",
+                              "input_json": "$activity.definition_activity_023XF65NT8HIN1PUvTPbWkR9MKg69ldWXot.output.variable_workflow_0204AA8D7GVKE3XiwJDjGek8PKLXII7Id8B$",
+                              "jsonpath_queries": [
+                                {
+                                  "jsonpath_query": "id",
+                                  "jsonpath_query_name": "Judgement ID",
+                                  "jsonpath_query_type": "string",
+                                  "zdate_type_format": "yyyy-MM-dd'T'HH:mm:ssZ"
+                                }
+                              ],
+                              "skip_execution": false
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF65RJ7FU35tsm3yqA8cHffHtQQG6yxx",
+                            "name": "Threat Response -  Relate Judgement to Indicator",
+                            "title": "Threat Response -  Relate Judgement to Indicator",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response -  Relate Judgement to Indicator",
+                              "input": {
+                                "variable_workflow_0204AJ7FYKDNP52ZwHEV8KjV7Tp479yBuTR": "$activity.definition_activity_023XF65PMXEFD0Geu3TDEETfhh6ADOgUJEE.output.jsonpath_queries.Judgement ID$",
+                                "variable_workflow_0204AJF1EU15B6oCJRWQdMvi7pjrLFsdjx7": "https://private.intel.amp.cisco.com:443/ctia/indicator/$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.input.variable_workflow_023XF645M4Q8G4ZkC7YQrqTLpGjxgOEfTHJ$",
+                                "variable_workflow_0204AKR60C4JM6mVqRssGWv5g4vUbuySX08": "$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$",
+                                "variable_workflow_0204BSSSXIKTY0TFQJoxXzCQyyfABQLR9t1": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_0204AHSKUWSV774MnRx1Id4i7LsA1UGkbJ7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_0204AFQGHD1JR48ie24qXD5qYiIMPpnzn4H",
+                              "workflow_name": "Threat Response -  Relate Judgement to Indicator"
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_023XF65TE9EN750lku3zpIDcDLnRZStiKYf",
+                    "name": "Parallel Branch",
+                    "title": "IPv6 Host IOCs",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "IPv6 Host IOCs",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_023XF65UK1U8B4KQ27EW7xuIBy82IfGe1rf",
+                        "name": "Read Table from JSON",
+                        "title": "Get IPv6 Host IOCs",
+                        "type": "corejava.read_table_from_json",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Get IPv6 Host IOCs",
+                          "input_json": "$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.ipv6_host_iocs$",
+                          "jsonpath_query": "$.",
+                          "persist_output": true,
+                          "populate_columns": false,
+                          "skip_execution": false,
+                          "table_columns": [
+                            {
+                              "column_name": "ioc",
+                              "column_type": "string"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_023XF65W2CETQ6kQqKFlKyy6YvqK8AsOCBP",
+                        "name": "For Each",
+                        "title": "For Each IOC",
+                        "type": "logic.for_each",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "For Each IOC",
+                          "skip_execution": false,
+                          "source_array": "$activity.definition_activity_023XF65UK1U8B4KQ27EW7xuIBy82IfGe1rf.output.read_table_from_json$"
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_023XF65Z1FGOQ59YQfmDp8hzGMYG0oeO19v",
+                            "name": "Threat Response - Create Private Judgement",
+                            "title": "Threat Response - Create Private Judgement",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response - Create Private Judgement",
+                              "input": {
+                                "variable_workflow_02041UD61IL042DNGODUf0xAIuixH3Rc01z": "{\n\"source\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M24PI0bbCb0iZSXYyHXAknOO889$\",\n\"reason\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$\",\n\"priority\": $workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M1OEI2iQncta77WiERXJe2Rdk51$,\n\"disposition_name\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2KX71BM20sGcvEvq4LuCBa7bsd$\",\n\"severity\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2DF01IjOlD9bkQOzGbSzE4KKZS$\",\n\"confidence\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M18DT3tb2yuy7C6NoFjIy87q014$\",\n\"tlp\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M3RXL5vNvhvevVAX6Mh40xSz9dp$\",\n\"observable\": {\"value\": \"$activity.definition_activity_023XF65W2CETQ6kQqKFlKyy6YvqK8AsOCBP.input.source_array[@].ioc$\", \"type\": \"ip\"}\n}",
+                                "variable_workflow_02042N7MDVSC609MvIcMEmPfpwfNmwOJ7Nv": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_02041WD96QRVD7Iv5c6jk3Bwz4sFFjxkBB7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_02041RUTMEWJN5i9HAHU7sOob46GkYwANLN",
+                              "workflow_name": "Threat Response - Create Private Judgement"
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF6610TGNA1HQ8mge0MYRhCFaCYzUGlM",
+                            "name": "JSONPath Query",
+                            "title": "Judgemet ID",
+                            "type": "corejava.jsonpathquery",
+                            "base_type": "activity",
+                            "properties": {
+                              "action_timeout": 180,
+                              "continue_on_failure": false,
+                              "display_name": "Judgemet ID",
+                              "input_json": "$activity.definition_activity_023XF65Z1FGOQ59YQfmDp8hzGMYG0oeO19v.output.variable_workflow_0204AA8D7GVKE3XiwJDjGek8PKLXII7Id8B$",
+                              "jsonpath_queries": [
+                                {
+                                  "jsonpath_query": "id",
+                                  "jsonpath_query_name": "Judgement ID",
+                                  "jsonpath_query_type": "string",
+                                  "zdate_type_format": "yyyy-MM-dd'T'HH:mm:ssZ"
+                                }
+                              ],
+                              "skip_execution": false
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF6636DTPD49TA8wVNZTqNpKIjCNWMAN",
+                            "name": "Threat Response -  Relate Judgement to Indicator",
+                            "title": "Threat Response -  Relate Judgement to Indicator",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response -  Relate Judgement to Indicator",
+                              "input": {
+                                "variable_workflow_0204AJ7FYKDNP52ZwHEV8KjV7Tp479yBuTR": "$activity.definition_activity_023XF6610TGNA1HQ8mge0MYRhCFaCYzUGlM.output.jsonpath_queries.Judgement ID$",
+                                "variable_workflow_0204AJF1EU15B6oCJRWQdMvi7pjrLFsdjx7": "https://private.intel.amp.cisco.com:443/ctia/indicator/$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.input.variable_workflow_023XF645M2S6H0xbsOYHXFDURYueLrIlxj8$",
+                                "variable_workflow_0204AKR60C4JM6mVqRssGWv5g4vUbuySX08": "SecureX_TCS_IPv4_Indicato$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$",
+                                "variable_workflow_0204BSSSXIKTY0TFQJoxXzCQyyfABQLR9t1": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_0204AHSKUWSV774MnRx1Id4i7LsA1UGkbJ7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_0204AFQGHD1JR48ie24qXD5qYiIMPpnzn4H",
+                              "workflow_name": "Threat Response -  Relate Judgement to Indicator"
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_023XF665D7X8N6zvTsqfOGvWTySmjZAqiSv",
+                    "name": "Parallel Branch",
+                    "title": "IPv6 Network IOCs",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "IPv6 Network IOCs",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_023XF666LUO2T10iL91OCFfj92aqpTUoMIk",
+                        "name": "Read Table from JSON",
+                        "title": "Get IPv6 Network IOCs",
+                        "type": "corejava.read_table_from_json",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Get IPv6 Network IOCs",
+                          "input_json": "$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.ipv6_network_iocs$",
+                          "jsonpath_query": "$.",
+                          "persist_output": true,
+                          "populate_columns": false,
+                          "skip_execution": false,
+                          "table_columns": [
+                            {
+                              "column_name": "ioc",
+                              "column_type": "string"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_023XF6683OUBZ0Bu2UCFKyuS23Vh5FYZGCm",
+                        "name": "For Each",
+                        "title": "For Each IOC",
+                        "type": "logic.for_each",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "For Each IOC",
+                          "skip_execution": false,
+                          "source_array": "$activity.definition_activity_023XF666LUO2T10iL91OCFfj92aqpTUoMIk.output.read_table_from_json$"
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_023XF66AN2H305tL6SqgA5liSKKbi0S2YyH",
+                            "name": "Threat Response - Create Private Judgement",
+                            "title": "Threat Response - Create Private Judgement",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response - Create Private Judgement",
+                              "input": {
+                                "variable_workflow_02041UD61IL042DNGODUf0xAIuixH3Rc01z": "{\n\"source\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M24PI0bbCb0iZSXYyHXAknOO889$\",\n\"reason\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$\",\n\"priority\": $workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M1OEI2iQncta77WiERXJe2Rdk51$,\n\"disposition_name\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2KX71BM20sGcvEvq4LuCBa7bsd$\",\n\"severity\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2DF01IjOlD9bkQOzGbSzE4KKZS$\",\n\"confidence\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M18DT3tb2yuy7C6NoFjIy87q014$\",\n\"tlp\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M3RXL5vNvhvevVAX6Mh40xSz9dp$\",\n\"observable\": {\"value\": \"$activity.definition_activity_023XF6683OUBZ0Bu2UCFKyuS23Vh5FYZGCm.input.source_array[@].ioc$\", \"type\": \"ip\"}\n}",
+                                "variable_workflow_02042N7MDVSC609MvIcMEmPfpwfNmwOJ7Nv": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_02041WD96QRVD7Iv5c6jk3Bwz4sFFjxkBB7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_02041RUTMEWJN5i9HAHU7sOob46GkYwANLN",
+                              "workflow_name": "Threat Response - Create Private Judgement"
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF66CHKIZ05IQUvhXG6BDcbV661DTUU7",
+                            "name": "JSONPath Query",
+                            "title": "Judgemet ID",
+                            "type": "corejava.jsonpathquery",
+                            "base_type": "activity",
+                            "properties": {
+                              "action_timeout": 180,
+                              "continue_on_failure": false,
+                              "display_name": "Judgemet ID",
+                              "input_json": "$activity.definition_activity_023XF66AN2H305tL6SqgA5liSKKbi0S2YyH.output.variable_workflow_0204AA8D7GVKE3XiwJDjGek8PKLXII7Id8B$",
+                              "jsonpath_queries": [
+                                {
+                                  "jsonpath_query": "id",
+                                  "jsonpath_query_name": "Judgement ID",
+                                  "jsonpath_query_type": "string",
+                                  "zdate_type_format": "yyyy-MM-dd'T'HH:mm:ssZ"
+                                }
+                              ],
+                              "skip_execution": false
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF66EE75DD6PDzDLQqx4D4HsgnnwFWT6",
+                            "name": "Threat Response -  Relate Judgement to Indicator",
+                            "title": "Threat Response -  Relate Judgement to Indicator",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response -  Relate Judgement to Indicator",
+                              "input": {
+                                "variable_workflow_0204AJ7FYKDNP52ZwHEV8KjV7Tp479yBuTR": "$activity.definition_activity_023XF66CHKIZ05IQUvhXG6BDcbV661DTUU7.output.jsonpath_queries.Judgement ID$",
+                                "variable_workflow_0204AJF1EU15B6oCJRWQdMvi7pjrLFsdjx7": "https://private.intel.amp.cisco.com:443/ctia/indicator/$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.input.variable_workflow_023XF645M2S6H0xbsOYHXFDURYueLrIlxj8$",
+                                "variable_workflow_0204AKR60C4JM6mVqRssGWv5g4vUbuySX08": "$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$",
+                                "variable_workflow_0204BSSSXIKTY0TFQJoxXzCQyyfABQLR9t1": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_0204AHSKUWSV774MnRx1Id4i7LsA1UGkbJ7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_0204AFQGHD1JR48ie24qXD5qYiIMPpnzn4H",
+                              "workflow_name": "Threat Response -  Relate Judgement to Indicator"
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_023XF66G881ZM02Ft94QQwR8HA09paXG1oF",
+                    "name": "Parallel Branch",
+                    "title": "URL IOCs",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "URL IOCs",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_023XF66HEOHVP56AkaUYojPxxHCV9pHk4rX",
+                        "name": "Read Table from JSON",
+                        "title": "Get URL IOCs",
+                        "type": "corejava.read_table_from_json",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Get URL IOCs",
+                          "input_json": "$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.url_iocs$",
+                          "jsonpath_query": "$.",
+                          "persist_output": true,
+                          "populate_columns": false,
+                          "skip_execution": false,
+                          "table_columns": [
+                            {
+                              "column_name": "ioc",
+                              "column_type": "string"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_023XF66J0AOF66lS8lTe05vT8BS5vRlFv2M",
+                        "name": "For Each",
+                        "title": "For Each IOC",
+                        "type": "logic.for_each",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "For Each IOC",
+                          "skip_execution": false,
+                          "source_array": "$activity.definition_activity_023XF66HEOHVP56AkaUYojPxxHCV9pHk4rX.output.read_table_from_json$"
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_023XF66LH4K523xznzt0wXLP23hnj7ULuMD",
+                            "name": "Threat Response - Create Private Judgement",
+                            "title": "Threat Response - Create Private Judgement",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response - Create Private Judgement",
+                              "input": {
+                                "variable_workflow_02041UD61IL042DNGODUf0xAIuixH3Rc01z": "{\n\"source\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M24PI0bbCb0iZSXYyHXAknOO889$\",\n\"reason\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M4I1739YURJJ4learCcYO1X17se$\",\n\"priority\": $workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M1OEI2iQncta77WiERXJe2Rdk51$,\n\"disposition_name\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2KX71BM20sGcvEvq4LuCBa7bsd$\",\n\"severity\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M2DF01IjOlD9bkQOzGbSzE4KKZS$\",\n\"confidence\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M18DT3tb2yuy7C6NoFjIy87q014$\",\n\"tlp\": \"$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.static.variable_workflow_023XF645M3RXL5vNvhvevVAX6Mh40xSz9dp$\",\n\"observable\": {\"value\": \"$activity.definition_activity_023XF66J0AOF66lS8lTe05vT8BS5vRlFv2M.input.source_array[@].ioc$\", \"type\": \"url\"}\n}",
+                                "variable_workflow_02042N7MDVSC609MvIcMEmPfpwfNmwOJ7Nv": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_02041WD96QRVD7Iv5c6jk3Bwz4sFFjxkBB7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_02041RUTMEWJN5i9HAHU7sOob46GkYwANLN",
+                              "workflow_name": "Threat Response - Create Private Judgement"
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF66NDUB210Gf5n55CG6X11w2GXITRg9",
+                            "name": "JSONPath Query",
+                            "title": "Judgemet ID",
+                            "type": "corejava.jsonpathquery",
+                            "base_type": "activity",
+                            "properties": {
+                              "action_timeout": 180,
+                              "continue_on_failure": false,
+                              "display_name": "Judgemet ID",
+                              "input_json": "$activity.definition_activity_023XF66LH4K523xznzt0wXLP23hnj7ULuMD.output.variable_workflow_0204AA8D7GVKE3XiwJDjGek8PKLXII7Id8B$",
+                              "jsonpath_queries": [
+                                {
+                                  "jsonpath_query": "id",
+                                  "jsonpath_query_name": "Judgement ID",
+                                  "jsonpath_query_type": "string",
+                                  "zdate_type_format": "yyyy-MM-dd'T'HH:mm:ssZ"
+                                }
+                              ],
+                              "skip_execution": false
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_023XF66P9L1130bl6iUMRlNz9l4nxSBy20H",
+                            "name": "Threat Response -  Relate Judgement to Indicator",
+                            "title": "Threat Response -  Relate Judgement to Indicator",
+                            "type": "workflow.atomic_workflow",
+                            "base_type": "subworkflow",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Threat Response -  Relate Judgement to Indicator",
+                              "input": {
+                                "variable_workflow_0204AJ7FYKDNP52ZwHEV8KjV7Tp479yBuTR": "$activity.definition_activity_023XF66NDUB210Gf5n55CG6X11w2GXITRg9.output.jsonpath_queries.Judgement ID$",
+                                "variable_workflow_0204AJF1EU15B6oCJRWQdMvi7pjrLFsdjx7": "https://private.intel.amp.cisco.com:443/ctia/indicator/$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.input.variable_workflow_023XF645M39J34u0YT4t9gqNU3xD0gGrOca$",
+                                "variable_workflow_0204AKR60C4JM6mVqRssGWv5g4vUbuySX08": "SecureX_TCS_IPv4_Indicator",
+                                "variable_workflow_0204BSSSXIKTY0TFQJoxXzCQyyfABQLR9t1": "$activity.definition_activity_023XF64IS1XLU7eS0UAX4MYSxxelJqniXyO.output.variable_workflow_01PP75S3G7CJY6WAQr2IJC7qga2SIoE09gQ$"
+                              },
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "skip_execution": false,
+                              "target": {
+                                "override_workflow_target": true,
+                                "target_id": "definition_target_0204AHSKUWSV774MnRx1Id4i7LsA1UGkbJ7",
+                                "target_type": "web-service.endpoint"
+                              },
+                              "workflow_id": "definition_workflow_0204AFQGHD1JR48ie24qXD5qYiIMPpnzn4H",
+                              "workflow_name": "Threat Response -  Relate Judgement to Indicator"
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_023XF6737ZFIJ3RiQkcDJN3MWEQLIqkiyVE",
+        "name": "Send Email",
+        "title": "Send Success Email",
+        "type": "email.smtp_send_email",
+        "base_type": "activity",
+        "properties": {
+          "action_timeout": 180,
+          "body": "\u003chtml\u003e\n  \u003cbody\u003e\n    \u003ch3\u003eSuccessfully Updated IoCs for Email: $trigger.triggerevent_023XFEFWT1UF44Eig9FtoeX6p103NfEgnT9.output.subject$\u003c/h3\u003e\n    \u003ch4\u003eEmail Summary\u003c/h4\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eTo: \u003c/b\u003e\n        $trigger.triggerevent_023XFEFWT1UF44Eig9FtoeX6p103NfEgnT9.output.to$\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eFrom: \u003c/b\u003e\n        $trigger.triggerevent_023XFEFWT1UF44Eig9FtoeX6p103NfEgnT9.output.sender$\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eSubject: \u003c/b\u003e\n        $trigger.triggerevent_023XFEFWT1UF44Eig9FtoeX6p103NfEgnT9.output.subject$\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003ch4\u003eIoCs Summary\u003c/h4\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eEmail: \u003c/b\u003e\n        $trigger.triggerevent_023XFEFWT1UF44Eig9FtoeX6p103NfEgnT9.output.message$\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eIPv4 Hosts: \u003c/b\u003e\n        \u003ccode\u003e$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.ipv4_host_iocs$\u003c/code\u003e\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eIPv4 Networks: \u003c/b\u003e\n        \u003ccode\u003e$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.ipv4_network_iocs$\u003c/code\u003e\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eIPv6 Hosts: \u003c/b\u003e\n        \u003ccode\u003e$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.ipv6_host_iocs$\u003c/code\u003e\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eIPv6 Networks: \u003c/b\u003e\n        \u003ccode\u003e$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.ipv6_network_iocs$\u003c/code\u003e\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eDomains: \u003c/b\u003e\n        \u003ccode\u003e$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.domain_iocs$\u003c/code\u003e\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eSHA256s: \u003c/b\u003e\n        \u003ccode\u003e$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.sha256_iocs$\u003c/code\u003e\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eURLs: \u003c/b\u003e\n        \u003ccode\u003e$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.url_iocs$\u003c/code\u003e\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eUncategorised / Ignored: \u003c/b\u003e\n        \u003ccode\u003e$activity.definition_activity_023XF64EAEGE90lS8Nktf6yUm9iegMePFjb.output.script_queries.uncategorised_iocs$\u003c/code\u003e\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003ch4\u003eTimestamp\u003c/h4\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eStart : \u003c/b\u003e\n        $workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.output.start_time$\n      \u003c/small\u003e\n    \u003c/p\u003e\n    \u003cp\u003e\n      \u003csmall\u003e\n        \u003cb\u003eEnd : \u003c/b\u003e\n        $activity.definition_activity_023XF64FKEAUO0d9HAsuEvOxqD9A1ovNAW1.output.end_time$\n      \u003c/small\u003e\n    \u003c/p\u003e\n  \u003c/body\u003e\n\u003c/html\u003e",
+          "continue_if_one_address_valid": true,
+          "continue_on_failure": false,
+          "display_name": "Send Success Email",
+          "from": "$trigger.triggerevent_023XFEFWT1UF44Eig9FtoeX6p103NfEgnT9.output.to$",
+          "html": true,
+          "runtime_user": {
+            "target_default": true
+          },
+          "skip_execution": false,
+          "subject": "Successfully Updated IoCs for Email: $trigger.triggerevent_023XFEFWT1UF44Eig9FtoeX6p103NfEgnT9.output.subject$",
+          "target": {
+            "override_workflow_target": true,
+            "target_id": "definition_target_0218XYTXU979Z0sSVXDzVbrv5FDT5qdGHUi"
+          },
+          "to": "$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.input.variable_workflow_023XF645M1WGR2HOY1YLTAxZOR6tOjYXfw4$\n$workflow.definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb.input.variable_workflow_023XF645M1WGR2HOY1YLTAxZOR6tOjYXfw4$"
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  },
+  "triggers": {
+    "triggerevent_023XFEFWT1UF44Eig9FtoeX6p103NfEgnT9": {
+      "workflow_id": "definition_workflow_023XF6457Y9JJ0shRTf7STvXzTf9kmGADlb",
+      "name": "mnpattan-read-email",
+      "title": "",
+      "lowercase_name": "event.mnpattan-read-email",
+      "type": "event",
+      "base_type": "trigger",
+      "ref_id": "event_023XFEE9BDXKD2DkcpTYSU4APSmg0918b0b",
+      "version": "1.0.0",
+      "disabled": false,
+      "unique_name": "triggerevent_023XFEFWT1UF44Eig9FtoeX6p103NfEgnT9",
+      "object_type": "triggerevent"
+    }
+  },
+  "events": {
+    "event_023XFEE9BDXKD2DkcpTYSU4APSmg0918b0b": {
+      "name": "Read-Email",
+      "title": "Read-Email",
+      "type": "email.event",
+      "base_type": "event",
+      "object_type": "event",
+      "target_id": "definition_target_023XFJXRZRTLB6CHH6nKHislMhwILrGbPHs",
+      "webhook_id": "",
+      "version": "1.0.0",
+      "properties": {
+        "action": "read",
+        "conditions": {
+          "left_operand": "$output.sender$",
+          "operator": "mw",
+          "right_operand": "*"
+        },
+        "display_name": "Read-Email",
+        "download_attachments": true,
+        "folder": "INBOX",
+        "target_id": "definition_target_023XFJXRZRTLB6CHH6nKHislMhwILrGbPHs",
+        "title": "Read-Email"
+      },
+      "unique_name": "event_023XFEE9BDXKD2DkcpTYSU4APSmg0918b0b"
+    }
+  },
+  "targets": {
+    "definition_target_01R7P5QZ072GX7HQLXeHyF82t6rVOnXp8Vw": {
+      "unique_name": "definition_target_01R7P5QZ072GX7HQLXeHyF82t6rVOnXp8Vw",
+      "name": "mnpattan-private_CTIA_Target",
+      "title": "mnpattan-private_CTIA_Target",
+      "type": "web-service.endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "disable_certificate_validation": false,
+        "display_name": "mnpattan-private_CTIA_Target",
+        "host": "private.intel.amp.cisco.com",
+        "ignore_proxy": false,
+        "no_runtime_user": true,
+        "protocol": "https"
+      }
+    },
+    "definition_target_02041WD96QRVD7Iv5c6jk3Bwz4sFFjxkBB7": {
+      "unique_name": "definition_target_02041WD96QRVD7Iv5c6jk3Bwz4sFFjxkBB7",
+      "name": "Threat Response Judgement Target",
+      "title": "Threat Response Judgement Target",
+      "type": "web-service.endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "description": "magaurav@cisco.com\nThreat Response - Create Private Judgement",
+        "disable_certificate_validation": false,
+        "display_name": "Threat Response Judgement Target",
+        "host": "private.intel.amp.cisco.com",
+        "ignore_proxy": false,
+        "no_runtime_user": true,
+        "path": "/ctia/judgement",
+        "port": 443,
+        "protocol": "https"
+      }
+    },
+    "definition_target_0204AHSKUWSV774MnRx1Id4i7LsA1UGkbJ7": {
+      "unique_name": "definition_target_0204AHSKUWSV774MnRx1Id4i7LsA1UGkbJ7",
+      "name": "Threat Response Relationship Target",
+      "title": "Threat Response Relationship Target",
+      "type": "web-service.endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "description": "magaurav@cisco.com\nThreat Response -  Relate Judgement to Indicator",
+        "disable_certificate_validation": false,
+        "display_name": "Threat Response Relationship Target",
+        "host": "private.intel.amp.cisco.com",
+        "ignore_proxy": false,
+        "no_runtime_user": true,
+        "path": "/ctia/relationship",
+        "port": 443,
+        "protocol": "https"
+      }
+    },
+    "definition_target_0204UV7P7AP7N66QPAv69jOBFBxNdhpsx4i": {
+      "unique_name": "definition_target_0204UV7P7AP7N66QPAv69jOBFBxNdhpsx4i",
+      "name": "asav-mgmt@srmgmt.local",
+      "title": "asav-mgmt@srmgmt.local",
+      "type": "web-service.endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "ao_remote_id": "01ZZT0HM5O74Y1k1Vg7cxV9ktnMLPrmFm2P",
+        "default_runtime_user_id": "definition_runtime_user_022WLCFWFVOHU4Yk3QiasVGz1qHHXQgyaTU",
+        "description": "magaurav@cisco.com\nsrmgmt.local/asav-mgmt (10.105.130.204)\nSecure Firewall (ASA) - Get Access Token\nSecure Firewall (ASA) - Update Network Group Literals\nSecure Firewall (ASA) - Get Network Group By Name",
+        "disable_certificate_validation": true,
+        "display_name": "asav-mgmt@srmgmt.local",
+        "host": "10.105.130.204",
+        "ignore_proxy": false,
+        "no_runtime_user": false,
+        "path": "api/",
+        "port": 443,
+        "protocol": "https"
+      }
+    },
+    "definition_target_0218XYTXU979Z0sSVXDzVbrv5FDT5qdGHUi": {
+      "unique_name": "definition_target_0218XYTXU979Z0sSVXDzVbrv5FDT5qdGHUi",
+      "name": "mnpattan_outlook",
+      "title": "mnpattan_outlook",
+      "type": "email.smtp_endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "default_runtime_user_id": "definition_runtime_user_0218Z0J1Z74A20Z3LK8iUt3MCD7bakNYy2g",
+        "display_name": "mnpattan_outlook",
+        "no_runtime_user": false,
+        "port": 587,
+        "protocol": "SMTP",
+        "server": "smtp.outlook.com"
+      }
+    },
+    "definition_target_023XFJXRZRTLB6CHH6nKHislMhwILrGbPHs": {
+      "unique_name": "definition_target_023XFJXRZRTLB6CHH6nKHislMhwILrGbPHs",
+      "name": "mnpattan-Outlook-IMAP",
+      "title": "mnpattan-Outlook-IMAP",
+      "type": "email.imap_endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "default_runtime_user_id": "definition_runtime_user_0218Z0J1Z74A20Z3LK8iUt3MCD7bakNYy2g",
+        "display_name": "mnpattan-Outlook-IMAP",
+        "ignore_certificate_errors": true,
+        "polling_interval": 30,
+        "port": 993,
+        "protocol": "IMAP",
+        "server": "outlook.office365.com",
+        "tls_enabled": true
+      }
+    },
+    "definition_target_023Y9H7JK10FY3uiI3R6o01sj2FYJUNerId": {
+      "unique_name": "definition_target_023Y9H7JK10FY3uiI3R6o01sj2FYJUNerId",
+      "name": "mnpattan-SecureX Target",
+      "title": "mnpattan-SecureX Target",
+      "type": "web-service.endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "default_runtime_user_id": "definition_runtime_user_023Y9JTYCBUPP6KJLKMgiiN5jkH8egCyiSZ",
+        "disable_certificate_validation": false,
+        "display_name": "mnpattan-SecureX Target",
+        "host": "visibility.amp.cisco.com",
+        "ignore_proxy": false,
+        "no_runtime_user": false,
+        "path": "/iroh",
+        "protocol": "https"
+      }
+    }
+  },
+  "runtime_users": {
+    "definition_runtime_user_0218Z0J1Z74A20Z3LK8iUt3MCD7bakNYy2g": {
+      "unique_name": "definition_runtime_user_0218Z0J1Z74A20Z3LK8iUt3MCD7bakNYy2g",
+      "name": "mnpattan_outlook",
+      "title": "mnpattan_outlook",
+      "type": "runtime_user.email_credentials",
+      "base_type": "runtime_user",
+      "object_type": "definition_runtime_user",
+      "properties": {
+        "display_name": "mnpattan_outlook",
+        "password": "*****",
+        "sender": "mnason.pattan@outlook.com"
+      }
+    },
+    "definition_runtime_user_022WLCFWFVOHU4Yk3QiasVGz1qHHXQgyaTU": {
+      "unique_name": "definition_runtime_user_022WLCFWFVOHU4Yk3QiasVGz1qHHXQgyaTU",
+      "name": "securex@srmgmt.local",
+      "title": "securex@srmgmt.local",
+      "type": "runtime_user.web-service_basic_credentials",
+      "base_type": "runtime_user",
+      "object_type": "definition_runtime_user",
+      "properties": {
+        "auth_option": "Basic",
+        "basic_password": "*****",
+        "basic_username": "securex",
+        "display_name": "securex@srmgmt.local"
+      }
+    },
+    "definition_runtime_user_023Y9JTYCBUPP6KJLKMgiiN5jkH8egCyiSZ": {
+      "unique_name": "definition_runtime_user_023Y9JTYCBUPP6KJLKMgiiN5jkH8egCyiSZ",
+      "name": "mnpattan-SecureX-BasicAuth",
+      "title": "mnpattan-SecureX-BasicAuth",
+      "type": "runtime_user.web-service_basic_credentials",
+      "base_type": "runtime_user",
+      "object_type": "definition_runtime_user",
+      "properties": {
+        "auth_option": "Basic",
+        "basic_password": "*****",
+        "basic_username": "client-3386e729-5627-4193-9881-5c1e7d0cdb2f",
+        "display_name": "mnpattan-SecureX-BasicAuth"
+      }
+    }
+  },
+  "target_groups": {
+    "target_group_021QSY51X3WZ304W5LuGD2177cyI5hOxe24": {
+      "unique_name": "target_group_021QSY51X3WZ304W5LuGD2177cyI5hOxe24",
+      "name": "Email IOCs Update ASA Target Group",
+      "title": "Email IOCs Update ASA Target Group",
+      "type": "generic.target_group",
+      "base_type": "target_group",
+      "version": "1.0.0",
+      "targets": [
+        {
+          "data_target_type": "web-service.endpoint",
+          "view_target_type": "web-service.endpoint",
+          "include_all_targets": false,
+          "selected_target_ids": [
+            "definition_target_0204UV7P7AP7N66QPAv69jOBFBxNdhpsx4i"
+          ]
+        }
+      ],
+      "object_type": "target_group"
+    }
+  },
+  "atomic_workflows": [
+    "definition_workflow_01PP75S3LTBW4420OZU3rdHWKHFnE6aC7yH",
+    "definition_workflow_02041RUTMEWJN5i9HAHU7sOob46GkYwANLN",
+    "definition_workflow_0204AFQGHD1JR48ie24qXD5qYiIMPpnzn4H"
+  ],
+  "remotemetas": {
+    "remote_meta_01ZZT0HM5QTCJ5qQtiZ15weovLnVfJyMJ7J": {
+      "base_type": "remote_meta",
+      "type": "generic.remote_meta",
+      "name": "mnpattan-sxo-remote",
+      "title": "mnpattan-sxo-remote",
+      "version": "1.0.0",
+      "properties": {
+        "cloud_type": "vmware",
+        "display_name": "mnpattan-sxo-remote",
+        "network": {
+          "dns_servers": "10.105.178.9",
+          "gateway": "10.105.178.1",
+          "ip_endpoint": "10.105.178.56/24",
+          "is_static_ip": true
+        },
+        "proxy": {
+          "proxy_url": "socks5://proxy.esl.cisco.com:1080",
+          "require_proxy": true
+        }
+      },
+      "unique_name": "remote_meta_01ZZT0HM5QTCJ5qQtiZ15weovLnVfJyMJ7J",
+      "object_type": "remote_meta"
+    }
+  },
+  "dependent_workflows": [
+    "definition_workflow_01PP75S3LTBW4420OZU3rdHWKHFnE6aC7yH",
+    "definition_workflow_02041RUTMEWJN5i9HAHU7sOob46GkYwANLN",
+    "definition_workflow_0204AFQGHD1JR48ie24qXD5qYiIMPpnzn4H"
+  ]
+}
